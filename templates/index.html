@@ -8,6 +8,30 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            /* Add custom styles for the buttons */
+            .btn {
+                display: inline-block;
+                font-weight: 400;
+                color: #212529;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                background-color: #007bff;
+                border: 1px solid transparent;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .25rem;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            }
+    
+            .btn:hover {
+                color: #fff;
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+        </style>
     </head>
 
     <body>
@@ -19,6 +43,10 @@
     			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
     		</div>
     	</div>
+        <!-- URLS for performance of teams and players -->
+
+        <a href="{{ url_for('team_performance') }}" class="btn">View Team Performance</a>
+        <a href="{{ url_for('player_performance') }}" class="btn">View Player Performance</a>
 
         <!-- Prediction Area -->
         <div class="prediction-area">
@@ -152,10 +180,10 @@
         <!-- Footer -->
        <div class='footer'>
            <div class="contact">
-               <a target="_blank" href="https://github.com/anujvyas/IPL-First-Innings-Score-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://github.com/theamiteshtripathi/IPL-Score-Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/theamiteshtripathi"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
            </div>
-           <p class='footer-description'>Made with ❤️ by Anuj Vyas.</p>
+           <p class='footer-description'>Made with ❤️ by Amitesh Tripathi</p>
        </div>
 
     </body>

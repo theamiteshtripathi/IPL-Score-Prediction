@@ -27,7 +27,8 @@ To run the project locally:
 1. Clone the repository: `git clone https://github.com/theamiteshtripathi/ipl-score-prediction.git`
 2. Navigate into the project directory: `cd ipl-score-prediction`
 3. Install the required packages: `pip install -r requirements.txt`
-4. Run the app: `python app.py`
+4. Run the prediction file: `python "Innings Score Prediction - IPL.py"`
+5. Run the app: `python app.py`
 
 Then, open a web browser and navigate to `localhost:5000` to view the app.
 

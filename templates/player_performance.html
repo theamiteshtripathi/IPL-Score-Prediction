@@ -1,0 +1,16 @@
+<h1>Player Performance</h1>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Total Runs</th>
+    <!-- Add more columns for each performance metric -->
+  </tr>
+  {% for player, metrics in performance_metrics.items() %}
+  <tr>
+    <td>{{ player }}</td>
+    <td>{{ metrics['Total Runs'] }}</td>
+    <!-- Add more cells for each performance metric -->
+  </tr>
+  {% endfor %}
+</table>
