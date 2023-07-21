@@ -1,7 +1,9 @@
-# IPL First Innings Score Prediction and Team Performance Analysis 🏏
-Welcome to our IPL First Innings Score Prediction and Team Performance Analysis project! This project uses Machine Learning algorithms and Data Analysis techniques on IPL (Indian Premier League) datasets to predict the first innings score and analyze team performances.
+# IPL First Innings Score Prediction, Team Performance and Player Performance Analysis 🏏
+Welcome to our IPL First Innings Score Prediction and Performance Analysis project! This project uses Machine Learning algorithms and Data Analysis techniques on IPL (Indian Premier League) datasets to predict the first innings score, analyze team performances, and analyze player performances.
+
 
 ![IPL Banner](./static/ipl_banner.jpg)
+
 
 
 ## Data 📊
@@ -13,13 +15,16 @@ The score prediction model is a Linear Regression model that predicts the first 
 ## Team Performance Analysis 📈
 The team performance analysis includes metrics like the total runs scored by each team, total wickets taken, average runs per match, and more. The analysis is performed in `team_performance_analyzer.py`, and visualizations are created using Matplotlib and Seaborn.
 
+## Player Performance Analysis 📊
+The player performance analysis includes metrics like total runs scored by each player, total wickets taken by each player, strike rate, bowling average, and more. The analysis is performed in `player_performance_analyzer.py`, and visualizations are created using Matplotlib and Seaborn.
+
 ## Web Application 💻
 The project includes a Flask web application that allows users to enter the current match stats and get a prediction for the first innings score. The web application uses the trained model to make predictions. It is designed to be deployed on Heroku.
 
 ## Setup and Installation ⚙️
 To run the project locally:
 
-1. Clone the repository: `git clone https://github.com/<your_username>/ipl-score-prediction.git`
+1. Clone the repository: `git clone https://github.com/theamiteshtripathi/ipl-score-prediction.git`
 2. Navigate into the project directory: `cd ipl-score-prediction`
 3. Install the required packages: `pip install -r requirements.txt`
 4. Run the app: `python app.py`
