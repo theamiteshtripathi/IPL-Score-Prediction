@@ -16,12 +16,16 @@ import seaborn as sns
 # Load the data
 df = pd.read_csv('ipl.csv')
 
-"""**Data Preprocessing**: We'll remove any rows that are not relevant or could distort our analysis. Given that we're analyzing overall team performance, we'll remove rows corresponding to matches that have less than 5 overs of data, as these could skew our analysis."""
+"""**Data Preprocessing**: We'll remove any rows that are not relevant or could distort our analysis. 
+Given that we're analyzing overall team performance, 
+we'll remove rows corresponding to matches that have less than 5 overs of data, as these could skew our analysis."""
 
 # Data Preprocessing
 df = df[df['overs']>=5.0]
 
-"""**Feature Engineering:** We'll compute some basic metrics such as total runs scored by each team, total wickets taken by each team, total matches played by each team, and total matches won by each team. We'll also compute derived metrics like the average runs per match and the win ratio for each team."""
+"""**Feature Engineering:** We'll compute some basic metrics such as total runs scored by each team, 
+total wickets taken by each team, total matches played by each team, and total matches won by each team. 
+We'll also compute derived metrics like the average runs per match and the win ratio for each team."""
 
 # Total runs scored by each team
 total_runs = df.groupby('bat_team')['runs'].sum()
