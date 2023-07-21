@@ -63,16 +63,16 @@
 
         <!-- Website Title -->
     	<div class="container">
-            <h2 class='container-heading'><span class='heading_first'>First Innings Score Predictor for </span><span class="heading_second">Indian Premier League (IPL)</span></h2>
+            <h1 class='container-heading'><span class='heading_first'>First Innings Score Predictor for </span><span class="heading_second">Indian Premier League (IPL)</span></h1>
             <div class='description'>
-    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    			<h3>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</h3>
     		</div>
     	</div>
         <!-- URLS for performance of teams and players -->
-
-        <a href="{{ url_for('team_performance') }}" class="btn">View Team Performance</a>
-        <a href="{{ url_for('player_performance') }}" class="btn">View Player Performance</a>
-
+        <div style="display: flex; justify-content: center;">
+            <a href="{{ url_for('team_performance') }}" class="btn">View Team Performance</a>
+            <a href="{{ url_for('player_performance') }}" class="btn">View Player Performance</a>
+        </div>
         <!-- Prediction Area -->
         <div class="prediction-area">
 
