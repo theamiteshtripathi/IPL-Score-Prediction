@@ -75,10 +75,10 @@ def predict():
 @app.route('/team_performance')
 def team_performance():
     # Call the function and store the results
-    team_performance_metrics = calculate_team_performance()
+    calculate_team_performance()
 
     # Return the results in a new HTML template
-    return render_template('team_performance.html', performance_metrics=team_performance_metrics)
+    return render_template('team_performance.html')
 
 @app.route('/player_performance')
 def player_performance():
@@ -89,4 +89,4 @@ def player_performance():
     return render_template('player_performance.html', performance_metrics=player_performance_metrics)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(port=8080 ,debug=True)

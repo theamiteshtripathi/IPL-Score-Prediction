@@ -62,7 +62,10 @@ def calculate_team_performance():
     axes[2].set_title('Average Runs per Match')
 
     plt.tight_layout()
-    return plt.show()
+    plt.show()
+    plt.savefig('static/images/TP_graph.png')
+    return None
+    
 
 if __name__ == "__main__":
     calculate_team_performance()
