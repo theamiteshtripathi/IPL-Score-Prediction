@@ -54,5 +54,5 @@ regressor = LinearRegression()
 regressor.fit(X_train,y_train)
 
 # Creating a pickle file for the classifier
-filename = 'first-innings-score-lr-model.pkl'
+filename = 'innings-score-lr-model.pkl'
 pickle.dump(regressor, open(filename, 'wb'))
