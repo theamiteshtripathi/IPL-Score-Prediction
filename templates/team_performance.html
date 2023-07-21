@@ -11,38 +11,18 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">IPL Team Performance</h1>
-            <hr class="my-4">
-            <p class="lead">Analyze the performance of each team in the IPL.</p>
-        </div>
+  <div class="container">
+      <div class="jumbotron">
+          <h1 class="display-4">IPL Team Performance</h1>
+          <hr class="my-4">
+          <p class="lead">Analyze the performance of each team in the IPL.</p>
+      </div>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Team</th>
-                    <th scope="col">Total Runs</th>
-                    <th scope="col">Total Wickets</th>
-                    <th scope="col">Average Runs per Match</th>
-                    <th scope="col">Average Wickets per Match</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for team, metrics in performance_metrics.items() %}
-                <tr>
-                    <td>{{ team }}</td>
-                    <td>{{ metrics['Total Runs'] }}</td>
-                    <td>{{ metrics['Total Wickets'] }}</td>
-                    <td>{{ metrics['Average Runs per Match'] }}</td>
-                    <td>{{ metrics['Average Wickets per Match'] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+      <img src="{{ url_for('static', filename='/TP_graph.png') }}" alt="Performance on different metrics">
+      
 
-        <a class="btn btn-primary btn-lg" href="{{ url_for('index') }}" role="button">Back to Home</a>
-    </div>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('index') }}" role="button">Back to Home</a>
+  </div>
 </body>
 
 </html>

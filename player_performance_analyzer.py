@@ -73,7 +73,8 @@ def calculate_player_performance():
     axes[3].set_title('Top 10 Bowlers by Bowling Average (min. 10 overs bowled)')
 
     plt.tight_layout()
-    return plt.show()
+    plt.savefig('static/PP_graph.png')
+    return None
 
 if __name__ == "__main__":
     calculate_player_performance()
